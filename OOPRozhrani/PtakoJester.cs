@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace OOPRozhrani
 {
-    class PtakoJester : IJester, IPtak
+    class PtakoJester : Zvire, IJester, IPtak
     {
-        public void Dychej()
-        {
-            Console.WriteLine("Dýchám...");
-        }
+        
 
         public void Pipni()
         {
@@ -21,6 +18,10 @@ namespace OOPRozhrani
         public void PlazSe()
         {
             Console.WriteLine("Plazím se...");
+        }
+        public override string ToString()
+        {
+            return "Jsem ptakoještěr a vážím " + Vaha.ToString();
         }
     }
 }

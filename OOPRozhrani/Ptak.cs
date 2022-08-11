@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace OOPRozhrani
 {
-    class Ptak:IPtak
+    class Ptak: Zvire, IPtak
     {
         public void Pipni()
         {
             Console.WriteLine("♫ ♫ ♫");
         }
-        public void Dychej()
-        {
-            Console.WriteLine("Dýchám...");
-        }
+        
         public void Klovni()
         {
             Console.WriteLine("Klov, klov!");
         }
 
+        public override string ToString()
+        {
+            return "Jsem pták a vážím " + Vaha.ToString();
+        }
     }
 }

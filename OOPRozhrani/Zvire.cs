@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace OOPRozhrani
 {
-    interface IPtak
+    class Zvire
     {
-        void Pipni();
-        void Dychej();
+        public int Vaha { get; set; }
+        public void Dychej()
+        {
+            Console.WriteLine("Dycham...");
+        }
 
+        
     }
 }
