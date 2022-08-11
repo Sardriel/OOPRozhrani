@@ -6,25 +6,21 @@ using System.Threading.Tasks;
 
 namespace OOPRozhrani
 {
-    class PtakoJester : Zvire, IJester, IPtak
+    class Jester: Zvire, IJester
     {
-        public override void PresunSe()
-        {
-            Console.WriteLine("Letím...");
-        }
-
-        public void Pipni()
-        {
-            Console.WriteLine("♫ ♫♫ ♫ ♫ ♫♫");
-        }
-
         public void PlazSe()
         {
             Console.WriteLine("Plazím se...");
         }
+
+        public override void PresunSe()
+        {
+            Console.WriteLine("Plazím se...");
+        }
+
         public override string ToString()
         {
-            return "Ptakoještěr";
+            return "Ještěr";
         }
     }
 }

@@ -8,6 +8,10 @@ namespace OOPRozhrani
 {
     class Delfin: Zvire
     {
+        public override void PresunSe()
+        {
+            Console.WriteLine("Plavu...");
+        }
         public void Vyskoc()
         {
             Console.WriteLine("Vyskočil jsem nad hladinu...");
@@ -15,7 +19,7 @@ namespace OOPRozhrani
 
         public override string ToString()
         {
-            return "Jsem delfín a vážím " + Vaha.ToString();
+            return "Delfín";
         }
     }
 }

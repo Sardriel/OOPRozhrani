@@ -8,6 +8,10 @@ namespace OOPRozhrani
 {
     class Ptak: Zvire, IPtak
     {
+        public override void PresunSe()
+        {
+            Console.WriteLine("Letím...");
+        }
         public void Pipni()
         {
             Console.WriteLine("♫ ♫ ♫");
@@ -20,7 +24,7 @@ namespace OOPRozhrani
 
         public override string ToString()
         {
-            return "Jsem pták a vážím " + Vaha.ToString();
+            return "Pták";
         }
     }
 }
